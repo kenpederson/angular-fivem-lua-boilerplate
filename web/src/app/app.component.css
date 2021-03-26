@@ -1,0 +1,8 @@
+div.app-container {
+  background-color: white;
+  visibility: hidden;
+}
+
+div.app-container.visible {
+  visibility: visible;
+}
