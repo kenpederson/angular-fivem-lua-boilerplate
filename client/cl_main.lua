@@ -1,9 +1,10 @@
 -- Example of how it works. Look at the `useCoreService`, and the nui function in `nui-events`
 
-RegisterCommand('show:nui', function(source, args, rawCommand)
-  SendNuiMessage({
+RegisterCommand("ng_nui:toggle", function(source, args, rawCommand)
+  SendNUIMessage({
     app = "ANGULARNUI",
-    method = "setVisibility",
-    data = true
+    service = "DisplayService",
+    method = "toggleVisibility",
+    data = ""
   })
 end, false)

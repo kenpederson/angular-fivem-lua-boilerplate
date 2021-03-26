@@ -1,4 +1,4 @@
-fxversion "cerulean"
+fx_version "cerulean"
 game "gta5"
 
 client_script {
@@ -9,9 +9,12 @@ server_script {
   "server/*.lua"
 }
 
-ui_page "static/index.html"
+ui_page "html/index.html"
 
 files {
-  "static/index.html",
-  "static/main.js"
+  "html/index.html",
+  "html/main.js",
+  "html/polyfills.js",
+  "html/runtime.js",
+  "html/style.css"
 }
